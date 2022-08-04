@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import FirstMenu from './components/FirstMenu';
+import SecondMenu from './components/SecondMenu';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="d-flex justify-content-around">
+        <div>
+          <FirstMenu/>
+        </div>
+        <div>
+          <SecondMenu/>
+        </div>
+      </div>
     </div>
   );
 }
